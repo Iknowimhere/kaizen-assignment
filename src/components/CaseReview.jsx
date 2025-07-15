@@ -46,7 +46,7 @@ const CaseReview = () => (
         <CircularText />
       </div>
 
-      <div className='absolute bottom-4 right-4 flex text-sm md:text-base items-center gap-2 transition-layout'>
+      <div className='absolute bottom-4 right-4 flex text-sm md:text-base items-center transition-layout'>
         <button className='bg-[#C49A6C] text-white px-3 md:px-6 py-1 rounded-full font-semibold hover:bg-amber-300 transition-all shadow-md'>
           Contact us
         </button>
