@@ -1,12 +1,99 @@
-# React + Vite
+# Kaizen - Mesothelioma Case Review Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A responsive React application for mesothelioma case review and claim submissions, featuring smooth transitions, glass morphism effects, and mobile-first design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18.x
+- Tailwind CSS 3.x
+- React Icons
+- Vite
+- PostCSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quick Start
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/kaizen.git
+
+# Navigate to project directory
+cd kaizen
+
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Start development server
+npm run dev
+```
+
+Access the application at `http://localhost:5173`
+
+### Production Build
+
+```bash
+# Create production build
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Project Structure
+
+```
+kaizen/
+├── src/
+│   ├── components/
+│   │   ├── CaseReview.jsx    # Case review section
+│   │   ├── ClaimForm.jsx     # Claim submission form
+│   │   ├── InfoBanner.jsx    # Information banner
+│   │   └── MainContent.jsx   # Main layout component
+│   ├── assets/
+│   │   ├── images/          # Image assets
+│   │   └── fonts/           # Custom fonts
+│   ├── App.jsx              # Root component
+│   └── index.css           # Global styles
+├── public/
+└── package.json
+```
+
+## Features
+
+- 📱 Responsive design with mobile-first approach
+- ✨ Smooth transitions between breakpoints
+- 🎨 Glass morphism UI effects
+- 📝 Interactive form with validation
+- 📅 Custom date picker integration
+- 🎯 Accessibility focused
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Author
+
+Umashankar - [@iknowimhere](https://github.com/iknowimhere)

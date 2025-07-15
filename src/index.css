@@ -17,6 +17,8 @@ body {
   color: #fff;
   border-bottom: 1px solid #fff;
   outline: none;
+  min-height: 42px;
+  line-height: 1;
 }
 ::placeholder{
   color: #fff;
@@ -71,4 +73,70 @@ select.input-style option {
 
 select.input-style option:hover {
   background-color: #3a5b99;
+}
+
+input[type="date"] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  min-height: 42px;
+  line-height: 1;
+}
+
+/* Hide default date format display */
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  opacity: 0;
+}
+
+input[type="date"]:focus::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]:valid::-webkit-datetime-edit-fields-wrapper {
+  opacity: 1;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  width: 100%;
+  color: white;
+  opacity: 0.7;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  display: none;
+}
+
+/* Remove default calendar icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Add to index.css */
+.transition-layout {
+  transition: all 0.3s ease-in-out;
+}
+
+.transition-size {
+  transition: width 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.transition-text {
+  transition: font-size 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+.transition-form {
+  transition: padding 0.3s ease, margin 0.3s ease, width 0.3s ease;
+}
+
+.transition-input {
+  transition: font-size 0.3s ease, padding 0.3s ease, height 0.3s ease;
+}
+
+/* Add transition utilities */
+.transition-banner {
+  transition: all 0.3s ease-in-out;
 }

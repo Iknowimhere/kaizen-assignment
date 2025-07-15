@@ -40,31 +40,31 @@ const CircularText = () => (
 );
 
 const CaseReview = () => (
-  <section className='relative bg-white p-6 flex flex-col md:flex-row items-center gap-6 max-w-2xl mx-auto overflow-hidden rounded-2xl justify-center h-[65%]'>
-    <div className='flex flex-col justify-center h-full'>
-      <div className='w-50 h-50 bg-gradient-to-br from-indigo-500 to-purple-800 rounded-full flex items-center justify-center text-sm font-bold rotate-[-15deg]'>
+  <section className='relative w-full bg-white p-6 flex flex-col md:flex-row items-center gap-6 rounded-2xl justify-center h-[300px] sm:h-full mt-6 md:mt-0 transition-layout'>
+    <div className='flex flex-col justify-center transition-layout'>
+      <div className='w-32 h-32 md:w-50 md:h-50 bg-gradient-to-br from-[#2E4A7D] to-purple-800 rounded-full flex items-center justify-center text-sm font-bold rotate-[-15deg] mx-auto md:mx-0 transition-size'>
         <CircularText />
       </div>
 
-      <div className='absolute bottom-4 right-4 flex'>
-        <button className='bg-[#C49A6C] text-white px-6 py-2 rounded-full font-semibold hover:bg-amber-300 transition-all shadow-md'>
+      <div className='absolute bottom-4 right-4 flex text-sm md:text-base items-center gap-2 transition-layout'>
+        <button className='bg-[#C49A6C] text-white px-3 md:px-6 py-1 rounded-full font-semibold hover:bg-amber-300 transition-all shadow-md'>
           Contact us
         </button>
-        <button className='bg-[#C49A6C] text-white px-4 py-2 rounded-full font-semibold hover:bg-amber-700 transition-all shadow-md'>
+        <button className='bg-[#C49A6C] text-white px-3 md:px-4 py-1 rounded-full font-semibold hover:bg-amber-700 transition-all shadow-md'>
           &gt;
         </button>
       </div>
 
-      <span className='absolute top-3 right-3 text-[10px] hidden md:block w-20 text-right'>
+      <span className='absolute top-3 right-3 text-[10px] md:block w-20 text-right transition-text'>
         We are here <br /> to help!
       </span>
     </div>
 
-    <div className='flex-1 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 absolute h-[calc(100%-1rem)] top-3 left-3 bottom-2 flex flex-col justify-between w-[50%]'>
-      <h2 className='text-4xl font-light leading-snug'>
+    <div className='flex-1 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 absolute md:h-[calc(100%-1rem)] top-3 left-3 bottom-2 flex flex-col justify-between w-[50%] transition-layout'>
+      <h2 className='text-xl md:text-4xl font-light transition-text'>
         Free
         <br />
-        <span className='font-semibold'>
+        <span className='opacity-50'>
           Case <br /> Review
         </span>
       </h2>
@@ -73,10 +73,10 @@ const CaseReview = () => (
         {FEATURES.map(({ icon, text, bgColor }) => (
           <li
             key={text}
-            className='flex items-center gap-2'
+            className='flex items-center gap-2 text-xs transition-text'
           >
             <div
-              className={`w-6 h-6 rounded-full ${bgColor} flex items-center justify-center`}
+              className={`w-6 h-6 rounded-full ${bgColor} flex items-center justify-center transition-size`}
             >
               {icon}
             </div>
