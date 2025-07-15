@@ -6,8 +6,8 @@ A responsive React application for mesothelioma case review and claim submission
 
 ## Tech Stack
 
-- React 18.x
-- Tailwind CSS 3.x
+- React 19.x
+- Tailwind CSS 4.x
 - React Icons
 - Vite
 - PostCSS

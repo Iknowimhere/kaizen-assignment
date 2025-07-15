@@ -3,10 +3,14 @@ import background from './assets/images/hero_background.png';
 
 const App = () => (
   <main
-    className='min-h-screen bg-cover bg-center p-4 md:p-8'
-    style={{ backgroundImage: `url(${background})` }}
+    className='bg-cover bg-center bg-no-repeat bg-fixed p-4 md:p-8'
+    style={{
+      backgroundImage: `url(${background})`
+    }}
   >
-    <MainContent />
+    <div className='h-full w-full'>
+      <MainContent />
+    </div>
   </main>
 );
 
