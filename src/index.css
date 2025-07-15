@@ -23,16 +23,52 @@ body {
 }
 input[type="checkbox"] {
   appearance: none;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
   border: 1px solid #fff;
+  border-radius: 3px;
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-input[type="checkbox"]:checked {
-  background-color: #fbbf24;
-  border-color: #fbbf24;
-  outline: 2px solid #fcd34d;
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+textarea.input-style {
+  min-height: 42px;
+  line-height: 1.5;
+  overflow-y: hidden;
+}
+
+select.input-style {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5em;
+  color: white;
+}
+
+select.input-style option {
+  background-color: #2E4A7D;
+  color: white;
+  padding: 0.5rem;
+}
+
+select.input-style option:hover {
+  background-color: #3a5b99;
 }
